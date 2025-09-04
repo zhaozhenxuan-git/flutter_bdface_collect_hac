@@ -250,11 +250,11 @@
     [self.view addSubview:backButton];
     
     // 音量imageView，可动态播放图片
-    _voiceImageView = [[UIImageView alloc] init];
-    _voiceImageView.frame = CGRectMake((ScreenWidth-22-20), 42.7, 22, 22);
-    _voiceImageView.animationImages = [NSArray arrayWithObjects:
-                                       [UIImage imageNamed:@"icon_titlebar_voice1.png" inBundle:bdFaceAssetsBundle compatibleWithTraitCollection:nil],
-                                       [UIImage imageNamed:@"icon_titlebar_voice2.png" inBundle:bdFaceAssetsBundle compatibleWithTraitCollection:nil], nil];
+//    _voiceImageView = [[UIImageView alloc] init];
+//    _voiceImageView.frame = CGRectMake((ScreenWidth-22-20), 42.7, 22, 22);
+//    _voiceImageView.animationImages = [NSArray arrayWithObjects:
+//                                       [UIImage imageNamed:@"icon_titlebar_voice1.png" inBundle:bdFaceAssetsBundle compatibleWithTraitCollection:nil],
+//                                       [UIImage imageNamed:@"icon_titlebar_voice2.png" inBundle:bdFaceAssetsBundle compatibleWithTraitCollection:nil], nil];
 //     _voiceImageView.animationImages = [NSArray arrayWithObjects:
 //                                        [UIImage imageNamed:@"icon_titlebar_voice1"],
 //                                        [UIImage imageNamed:@"icon_titlebar_voice2"], nil];

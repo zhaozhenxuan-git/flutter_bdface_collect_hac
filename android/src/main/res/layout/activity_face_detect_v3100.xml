@@ -23,15 +23,6 @@
         android:layout_marginLeft="23dp"
         android:src="@drawable/collect_image_close_selector" />
 
-    <ImageView
-        android:id="@+id/detect_sound"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp"
-        android:layout_marginRight="21dp"
-        android:src="@mipmap/icon_titlebar_voice2" />
-
     <TextView
         android:id="@+id/detect_top_tips"
         android:layout_width="wrap_content"

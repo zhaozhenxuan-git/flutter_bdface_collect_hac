@@ -67,7 +67,6 @@ public class FaceDetectActivity extends Activity implements
     protected SurfaceView mSurfaceView;
     protected SurfaceHolder mSurfaceHolder;
     protected ImageView mCloseView;
-    protected ImageView mSoundView;
     protected ImageView mSuccessView;
     protected TextView mTipsTopView;
     protected FaceDetectRoundView mFaceDetectRoundView;
@@ -155,20 +154,7 @@ public class FaceDetectActivity extends Activity implements
         mFaceDetectRoundView = (FaceDetectRoundView) mRootView.findViewById(R.id.detect_face_round);
         mFaceDetectRoundView.setIsActiveLive(false);
         mCloseView = (ImageView) mRootView.findViewById(R.id.detect_close);
-        mSoundView = (ImageView) mRootView.findViewById(R.id.detect_sound);
-        mSoundView.setImageResource(mIsEnableSound ?
-                R.mipmap.icon_titlebar_voice2 : R.drawable.collect_image_voice_selector);
-        mSoundView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mIsEnableSound = !mIsEnableSound;
-                mSoundView.setImageResource(mIsEnableSound ?
-                        R.mipmap.icon_titlebar_voice2 : R.drawable.collect_image_voice_selector);
-                if (mIDetectStrategy != null) {
-                    mIDetectStrategy.setDetectStrategySoundEnable(mIsEnableSound);
-                }
-            }
-        });
+
         mTipsTopView = (TextView) mRootView.findViewById(R.id.detect_top_tips);
         mSuccessView = (ImageView) mRootView.findViewById(R.id.detect_success_image);
 
@@ -230,8 +216,7 @@ public class FaceDetectActivity extends Activity implements
             if (am != null) {
                 int cv = am.getStreamVolume(AudioManager.STREAM_MUSIC);
                 mIsEnableSound = cv > 0;
-                mSoundView.setImageResource(mIsEnableSound
-                        ? R.mipmap.icon_titlebar_voice2 : R.mipmap.icon_titlebar_voice1);
+
                 if (mIDetectStrategy != null) {
                     mIDetectStrategy.setDetectStrategySoundEnable(mIsEnableSound);
                 }
