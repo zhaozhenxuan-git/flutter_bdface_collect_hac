@@ -1,6 +1,6 @@
 name: flutter_bdface_collect_hac
 description: 基于 flutter_bdface_collect 插件的二次开发
-version: 1.0.2
+version: 1.0.4
 homepage: https://github.com/fluttercandies/flutter_bdface_collect
 environment:
   sdk: ">=2.12.0 <4.0.0"

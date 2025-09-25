@@ -243,7 +243,7 @@
     [self.remindDetailLabel setHidden:true];
     
     UIButton *backButton = [[UIButton alloc] init];
-    backButton.frame = CGRectMake(23.3, 43.3, 20, 20);
+    backButton.frame = CGRectMake(23.3, 48.3, 30, 30);
     [backButton setImage:[UIImage imageNamed:@"icon_titlebar_close.png" inBundle:bdFaceAssetsBundle compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
 //     [backButton setImage:[UIImage imageNamed:@"icon_titlebar_close"] forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(closeAction) forControlEvents:UIControlEventTouchUpInside];
